@@ -10,7 +10,7 @@ depends=('gcc-libs' 'meson')
 makedepends=('meson')
 source=("${pkgname}-${pkgver}".tar.gz::"https://github.com/JeffyCN/mirrors/archive/${_rga_commit}.tar.gz"
         "normalrga-cpp-add-10b-compact-endian-mode.patch")
-sha256sums=('SKIP'
+sha256sums=('5a337155f2d55bc6b112f366209d3e38279ba06e0b8865b0272e9f5b93249b96'
             '26f2990818d6b6412c7f1d57b27cacc3d3e30b7ffad1fd678b5d2d991f1f4c74')
 options=(!lto strip)
 
