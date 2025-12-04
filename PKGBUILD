@@ -20,6 +20,7 @@ prepare() {
 }
 
 build() {
+  export CXXFLAGS="$CXXFLAGS -fpermissive"
   cd mirrors-*
   meson setup --reconfigure builddir --prefix="$pkgdir/usr"
   ninja ${MAKEFLAGS} -C builddir
